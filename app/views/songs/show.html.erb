@@ -1,0 +1,13 @@
+<h1><%= @song.title%>'s Page</h1>
+
+Artist: <%= link_to @song.artist_name, artist_path(@song.artist_id) %>
+
+<br>
+<br>
+<br> <%= link_to "EDIT THIS SONG", edit_song_path %>
+<br>
+<br>
+<hr>
+<%= link_to "All Songs", songs_path%>
+<%= link_to "Create a New Song", new_song_path%>
+
